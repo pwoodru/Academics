@@ -1,0 +1,10 @@
+18 - Teams, Conway's Law
+19 - Prep for Guest Lecture
+20 - Intro to Git & CI/CD
+21 - CUSports, Roles, Operations
+23 - Sprint 1 Update
+24 - PBI's
+26 - OpenAPI Specification
+27 - API First, Microservices, DFD
+28 - DFD Notation, Call Origination
+29 - Issues

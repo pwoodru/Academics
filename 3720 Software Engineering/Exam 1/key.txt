@@ -1,0 +1,16 @@
+1 - zoom, what is software
+2 - history of software
+3 - complexity, SDLC
+4 - SDLC cont., process models
+5 - agile, scrum
+6 - agile, scrum cont.
+7 - user stories, the three C's
+8 - users, INVEST
+9 - roles, INVEST
+10 - wake up game
+11 - design levels, modules
+12 - modules, API contract
+13 - cohesion, iterating/increment
+14 - API, REST, HTTP, JSON
+16 - microservices, API first
+18 - teams in software

@@ -1,0 +1,12 @@
+20 - guest lecture, git & ci/cd
+24 - PBI's, horizontal/vertical refinement
+26 - OpenAPI Specifications
+27 - API First, microservices, DFD
+28 - DFD Notation, DFD Examples
+29 - Agile Issues, API Issues
+31 - Software Planning Triangle, Estimation (long)
+32 - Planning is hard, fred brooks, agile plan
+34 - going dark, good software
+35 - cruft, devops, TDD
+38 - Before Devops
+

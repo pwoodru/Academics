@@ -1,0 +1,240 @@
+openapi: 3.0.0
+info:
+  version: 1.0.0
+  title: Team5Sprint3DeleteInactiveAccounts
+  description: an example of a finding and deleting inactive accounts endpoint
+
+servers:
+  - url: www.example.com
+
+security:
+  - BasicAuth: []
+
+paths:
+  /createinfo:
+    post:
+      description: Adds a user's card info to the database
+      parameters:
+        #  ----- Added line  ------------------------------------------
+        - $ref: '#/components/parameters/username'
+        - $ref: '#/components/parameters/password'
+        - $ref: '#/components/parameters/cardinfo'
+        #  ---- /Added line  ------------------------------------------
+      responses:
+        '200':
+          description: Returns a success if user and pass are correct
+          content:
+            application/json:
+              schema:
+                type: string
+                items:
+                  #  ----- Added line  --------------------------------
+                  $ref: '#/components/schemas/success'
+                  #  ---- /Added line  --------------------------------
+        '400':
+          #  ----- Added line  ----------------------------------------
+          $ref: '#/components/responses/400Error'
+          #  ---- /Added line  ----------------------------------------
+
+  /getinfo:
+    get:
+      description: Returns a user's card info
+      parameters:
+        #  ----- Added line  ------------------------------------------
+        - $ref: '#/components/parameters/username'
+        - $ref: '#/components/parameters/password'
+        #  ---- /Added line  ------------------------------------------
+      responses:
+        '200':
+          description: Returns a success and card info if user and pass are correct
+          content:
+            application/json:
+              schema:
+                type: string
+                items:
+                  #  ----- Added line  --------------------------------
+                  $ref: '#/components/schemas/success'
+                  #  ---- /Added line  --------------------------------
+        '400':
+          #  ----- Added line  ----------------------------------------
+          $ref: '#/components/responses/401Error'
+          #  ---- /Added line  ----------------------------------------
+
+  /login:
+    get:
+      description: Returns a token or error message
+      parameters:
+        #  ----- Added line  ------------------------------------------
+        - $ref: '#/components/parameters/username'
+        - $ref: '#/components/parameters/password'
+        #  ---- /Added line  ------------------------------------------
+      responses:
+        '200':
+          description: Returns a token if correct username and password
+          content:
+            application/json:
+              schema:
+                type: integer
+                items:
+                  #  ----- Added line  --------------------------------
+                  $ref: '#/components/schemas/token'
+                  #  ---- /Added line  --------------------------------
+        '400':
+          #  ----- Added line  ----------------------------------------
+          $ref: '#/components/responses/400Error'
+          #  ---- /Added line  ----------------------------------------
+
+  /inactiveAccounts:
+    get:
+      description: Returns a list of usernames of those whose accounts have been inactive for more than the time specified. Will return blank list if no inactive users for more than the specified.
+      
+      parameters:
+        #  ----- Added line  ------------------------------------------
+        - $ref: '#/components/parameters/time'
+        #  ---- /Added line  ------------------------------------------
+      responses:
+        '200':
+          description: Returns a list of usernames
+          content:
+            application/json:
+              schema:
+                type: array
+                items:
+                  #  ----- Added line  --------------------------------
+                  $ref: '#/components/schemas/usernames'
+                  #  ---- /Added line  --------------------------------
+
+  /removeAccounts:
+    delete:
+      description: Returns success if inactive account was successfully terminated
+      
+      parameters:
+        #  ----- Added line  ------------------------------------------
+        - $ref: '#/components/parameters/accounts'
+        #  ---- /Added line  ------------------------------------------
+      responses:
+        '200':
+          description: Returns success if inactive account was removed
+          content:
+            application/json:
+              schema:
+                type: string
+                items:
+                  #  ----- Added line  --------------------------------
+                  $ref: '#/components/schemas/success'
+                  #  ---- /Added line  --------------------------------
+
+    
+  /registration:
+     post:
+      description: Adds a user to the database
+      parameters:
+        #  ----- Added line  ------------------------------------------
+        - $ref: '#/components/parameters/username'
+        - $ref: '#/components/parameters/password'
+        - $ref: '#/components/parameters/name'
+        - $ref: '#/components/parameters/email'
+        #  ---- /Added line  ------------------------------------------
+      responses:
+        '200':
+          description: Returns a success if correct username or email are not already in database
+          content:
+            application/json:
+              schema:
+                type: string
+                items:
+                  #  ----- Added line  --------------------------------
+                  $ref: '#/components/schemas/success'
+                  #  ---- /Added line  --------------------------------
+        '400':
+          #  ----- Added line  ----------------------------------------
+          $ref: '#/components/responses/400Error'
+          #  ---- /Added line  ----------------------------------------
+
+components:
+  securitySchemes:
+    BasicAuth:
+      type: http
+      scheme: basic
+
+  schemas:
+    usernames:
+      type: string
+    success:
+      type: string
+    token:
+      type: integer
+
+      #  ----- Added lines  ----------------------------------------
+  parameters:
+    time:
+      name: time
+      in: query
+      description: time period (by months) of inactive accounts
+      schema:
+        type: integer
+    accounts:
+      name: accounts
+      in: query
+      description: names of the inactive accounts to be deleted
+      schema:
+        type: array
+        items:
+            type: string
+
+    username:
+      name: username
+      in: query
+      description: username of user account
+      schema:
+        type: string
+      
+    password:
+      name: password
+      in: query
+      description: password for user account
+      schema:
+        type: string
+
+    name:
+      name: user_name
+      in: query
+      description: name of user, like the actual name of the person
+      schema:
+        type: string
+
+    email:
+      name: email
+      in: query
+      description: email of user
+      schema:
+        type: string
+
+    cardinfo:
+      name: card
+      in: query
+      description: card info of user
+      schema:
+        type: string
+
+  responses:
+    400Error:
+      description: Invalid request
+      content:
+        application/json:
+          schema:
+            type: object 
+            properties:
+              message:
+                type: string
+
+    401Error:
+      description: No bank info for this account is found
+      content:
+        application/json:
+          schema:
+            type: object 
+            properties:
+              message:
+                type: string
+  #  ---- /Added lines  ----------------------------------------
