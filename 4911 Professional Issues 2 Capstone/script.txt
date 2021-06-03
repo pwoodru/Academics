@@ -1,0 +1,46 @@
+Upon loading into the training simulation, the user is greeted with our sponsor's name, The Boeing Company, and the names of the capstone development team.
+
+The user will then engage in grabbing the tablet seated casually on a pedestal in the center of the room 
+which provides the user with access to a plethora of options, starting with the customization of the user's height.
+
+They will then have an interactable slider gliding between a range of height values to suit the wearer's needs.
+
+*wait for buttons press*
+Upon loading their height, the user can return to their tablet for more Quality of Life options including a motion sickness helper, 
+a choice of movement mechanics, and another slider to change the audio levels to their liking.
+
+Once the user has fully customized their experience, they will want to visit our "Sandbox Tutorial" environment to gain a better understanding of how to operate in
+this new world.
+(ends at 1:05)
+
+Upon loading into this new environment, the user will be greeted with a new tablet, a set of measuring cubes, a few matching boxes to hold the cubes,
+and set of interactables including a few bolts, some drillable holes, and practice slabs. Finally, the user will find the three tools we have made accessible.
+
+To get started, the user will grab the new tablet and select the button labelled "Task" to view their series of activities.
+
+Each task will be displayed in detail on the screen of the tablet with buttons for navigation and a "completion" button to mark an individual task as finished.
+
+The first, and most important task, is for the user to gain a better understanding of the simulation's control system. 
+
+By navigating to the button labelled "Controls" in the menu, the user can view an image of the button accompanied with a text description of the action that the
+button will accomplish. 
+
+When the user has viewed all twelve of the available controls, they can navigate back to the Task list, mark the first task complete, and proceed to task number two.
+
+In this case, task number two requires the user to measure each of the three cubes on the table, and place them in their appropriately labelled box to the left.
+If the user is unsure of the necessary controls for the task, the task description will provide the exact buttons needed for completion.
+
+The user will then be able to measure the cube using the ruler mechanic, pick up the cube, and place it in its correct box. 
+
+The final three tasks will assign the user an activity using each of the three tools located on the side table.
+
+First, the nail gun, for securing objects to a surface, next, the drill, for drilling holes in marked locations on a wood slab, and finally, the torque wrench,
+for tightening bolts in place.
+
+When the user has completed all five tasks and learned the mechanics of the training simulation, they will have the ability to stay in the sandbox and practice each
+mechanic further, or to proceed to our Tooling Environment to gain a better understanding of each tool's procedure.
+
+
+
+
+
