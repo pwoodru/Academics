@@ -1,0 +1,4 @@
+9 & 10 - Tracing, Recursion, Mutual Recursion, Objects
+11 - Profiling
+13 - Prolog Intro
+17 - Prolog Arithmetic, Recursion, Lists, Membership
