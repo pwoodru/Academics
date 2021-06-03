@@ -1,0 +1,33 @@
+- https://www.tensorflow.org/
+
+- https://arxiv.org/abs/1603.04467
+
+- https://proceedings.neurips.cc/paper/2006/file/77ee3bc58ce560b86c2b59363281e914-Paper.pdf
+
+- https://www.sciencedirect.com/science/article/abs/pii/S0950705113001275
+
+- https://ieeexplore.ieee.org/abstract/document/8255362
+
+- http://www.ijcte.org/papers/837-S029.pdf
+
+- https://ieeexplore.ieee.org/stamp/stamp.jsp?tp=&arnumber=666641
+
+- https://iopscience.iop.org/article/10.1088/1757-899X/288/1/012068/pdf 
+
+- https://ieeexplore.ieee.org/stamp/stamp.jsp?tp=&arnumber=8593513
+
+- https://ieeexplore.ieee.org/stamp/stamp.jsp?tp=&arnumber=676264 
+
+- https://ieeexplore.ieee.org/stamp/stamp.jsp?tp=&arnumber=913774
+
+- https://dl.acm.org/doi/pdf/10.1145/3065386
+
+- https://dl.acm.org/doi/10.1145/3368555.3384468
+
+- https://dl.acm.org/doi/10.1145/3097983.3098036
+
+- https://www.technologyreview.com/2018/11/17/103781/what-is-machine-learning-we-drew-you-another-flowchart/
+
+- https://dl.acm.org/doi/10.1145/3311957.3359476
+
+- https://www.computerworld.com/article/2759107/how-social-networking-works.html
